@@ -1,4 +1,4 @@
-# 💰 Smart Budget Tracker
+# 💰 Cash Intelligence Navigator 
 
 > **Take Control of Your Money. Track Smarter. Save Better.**
 
@@ -304,98 +304,11 @@ Used for:
 * Chart initialization
 * Progress animations
 
-### PHP 8+
-
-**Core PHP** handles the backend functionality, including:
-
-* Authentication
-* Sessions
-* CRUD operations
-* Form processing
-* Database communication
-* Validation
-* Authorization
-* Financial calculations
-
-### SQL / MySQL
-
-MySQL is used for storing and managing:
-
-* Users
-* Income
-* Expenses
-* Categories
-* Budgets
-* Savings goals
-
-### PDO
-
-PHP Data Objects (**PDO**) is used for secure database communication with prepared statements.
-
----
-
-## 📚 Libraries & Tools
-
-| Technology                  | Usage                       |
-| --------------------------- | --------------------------- |
-| HTML5                       | Webpage structure           |
-| CSS3                        | UI/UX and responsive design |
-| Vanilla JavaScript          | Frontend interactions       |
-| PHP 8+                      | Backend development         |
-| MySQL                       | Database management         |
-| PDO                         | Secure database access      |
-| Chart.js                    | Data visualization          |
-| Font Awesome / Lucide Icons | Interface icons             |
-| LocalStorage                | Theme preference            |
-| PHP Sessions                | Authentication              |
-
----
-
-# 🗄️ Database
-
-The application uses a MySQL database named:
-
-```text
-smart_budget_tracker
-```
-
-The database contains tables for:
-
-* Users
-* Categories
-* Income
-* Expenses
-* Budgets
-* Savings Goals
-
-The database uses:
-
-* Primary keys
-* Foreign keys
-* Indexes
-* User-specific relationships
-* Appropriate data types
-
 ---
 
 # 🛡️ Security
 
 Security has been considered throughout the application.
-
-Implemented practices include:
-
-* `password_hash()`
-* `password_verify()`
-* PDO prepared statements
-* PHP sessions
-* CSRF tokens
-* Input validation
-* Output escaping using `htmlspecialchars()`
-* Authorization checks
-* User-specific queries
-* SQL injection prevention
-* Protection against unauthorized record access
-
 Each user's financial information is isolated from other users.
 
 ---
@@ -513,23 +426,6 @@ Managing money can become difficult when income, expenses, budgets, and savings 
 
 ---
 
-# ⭐ Project Highlights
-
-* 🔐 Secure Authentication
-* 💰 Real-time Financial Calculations
-* 📊 Interactive Analytics
-* 🧠 Smart Spending Insights
-* ❤️ Financial Health Score
-* 🎯 Savings Goals
-* 📈 Monthly Comparison
-* 🌙 Dark Mode
-* 📱 Fully Responsive UI
-* 🛡️ Secure PDO Database Queries
-* 🇮🇳 Indian Currency Support
-* 🎨 Modern FinTech UI
-
----
-
 ## 📄 License
 
 This project is developed for **educational, learning, and portfolio purposes**.
@@ -540,7 +436,7 @@ Feel free to study the code, customize the design, add new functionality, and im
 
 <div align="center">
 
-### 💰 Smart Budget Tracker
+### 💰Cash Intelligence Navigator
 
 **Track Smarter • Spend Wisely • Save Better**
 
