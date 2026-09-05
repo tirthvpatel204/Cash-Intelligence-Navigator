@@ -1,0 +1,63 @@
+{
+  "entities": {
+    "User": {
+      "title": "User Profile",
+      "description": "User accounts and authentication metadata",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "fullName": { "type": "string" },
+        "email": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "fullName", "email"]
+    },
+    "Transaction": {
+      "title": "Financial Transaction",
+      "description": "Income and expense transactions",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "type": { "type": "string", "enum": ["income", "expense"] },
+        "category": { "type": "string" },
+        "amount": { "type": "number" },
+        "paymentMethod": { "type": "string" },
+        "transactionDate": { "type": "string" },
+        "description": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["userId", "type", "category", "amount", "paymentMethod", "transactionDate"]
+    },
+    "Budget": {
+      "title": "Category Budget",
+      "description": "Monthly budget targets by category",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "category": { "type": "string" },
+        "monthYear": { "type": "string" },
+        "allocatedAmount": { "type": "number" }
+      },
+      "required": ["userId", "category", "monthYear", "allocatedAmount"]
+    },
+    "SavingsGoal": {
+      "title": "Savings Goal",
+      "description": "User savings targets and progress",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "name": { "type": "string" },
+        "targetAmount": { "type": "number" },
+        "currentAmount": { "type": "number" },
+        "deadline": { "type": "string" },
+        "category": { "type": "string" },
+        "status": { "type": "string" }
+      },
+      "required": ["userId", "name", "targetAmount", "currentAmount"]
+    }
+  },
+  "firestoreRules": "firestore.rules"
+}
