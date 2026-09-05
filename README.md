@@ -2,52 +2,27 @@
 
 > **Take Control of Your Money. Track Smarter. Save Better.**
 
-A modern, full-stack personal finance management web application designed to help users **track income, manage expenses, set budgets, analyze spending habits, and achieve savings goals** from one centralized dashboard.
+**Smart Budget Tracker** is a modern, full-stack personal finance management web application that helps users track income, manage expenses, set budgets, analyze spending patterns, and achieve savings goals — all from one smart dashboard.
 
-🔗 **Live Demo:** https://cash-intelligence-navigator.vercel.app
-
----
-
-## 🚀 Overview
-
-**Smart Budget Tracker** is a professional FinTech-style web application built with **Core PHP, MySQL, PDO, Vanilla JavaScript, HTML5 and CSS3**.
-
-The application provides a secure and personalized financial dashboard where every user's financial information is stored separately and retrieved dynamically from the database.
-
-Instead of simply displaying static statistics, the application performs real calculations using database records to provide meaningful insights into:
-
-* 💵 Income
-* 💸 Expenses
-* 📊 Budgets
-* 💰 Savings
-* 🎯 Savings Goals
-* 📈 Monthly Analytics
-* 🧠 Smart Spending Insights
-* ❤️ Financial Health Score
+🚀 **Live Demo:** https://cash-intelligence-navigator.vercel.app
 
 ---
 
-## ✨ Key Features
+## ✨ Features
 
-### 🔐 Secure Authentication
+### 🔐 User Authentication
 
 * User registration and login
 * Secure password hashing
 * Password verification
-* PHP session authentication
-* Logout functionality
-* Duplicate email validation
+* PHP session management
+* Secure logout
+* Duplicate email detection
 * CSRF protection
+* Server-side validation
 * User-specific data isolation
-* Server-side form validation
-
----
 
 ### 📊 Smart Dashboard
-
-The dashboard provides an instant overview of the user's financial activity.
-
-It displays:
 
 * Total Balance
 * Total Income
@@ -55,27 +30,23 @@ It displays:
 * Monthly Budget
 * Remaining Budget
 * Total Savings
-* Current month
-* Current date
+* Current date and month
 * Recent transactions
 * Quick action buttons
 
-All statistics are calculated from **real MySQL data**.
-
----
+All dashboard statistics are calculated from real database data.
 
 ### 💵 Income Management
-
-Users can manage their income records with complete CRUD functionality.
-
-**Supported operations:**
 
 * Add income
 * Edit income
 * Delete income
-* View income history
+* View income records
+* Income source tracking
+* Payment method tracking
+* Transaction descriptions
 
-**Income sources include:**
+**Income Sources:**
 
 * Salary
 * Freelance
@@ -84,100 +55,65 @@ Users can manage their income records with complete CRUD functionality.
 * Gift
 * Other
 
-**Payment methods:**
-
-* Cash
-* UPI
-* Debit Card
-* Credit Card
-* Bank Transfer
-* Other
-
----
-
 ### 💸 Expense Management
-
-Track daily spending with detailed expense records.
-
-Users can:
 
 * Add expenses
 * Edit expenses
 * Delete expenses
-* View expenses
-* Assign categories
-* Add descriptions
-* Select payment methods
-* Record what the expense was used for
+* View expense records
+* Category-based tracking
+* Payment method tracking
+* Used-for descriptions
 
-**Expense categories:**
+**Categories:**
 
-* 🍔 Food
-* 🚗 Travel
-* 🛍️ Shopping
-* 📚 Education
-* 🧾 Bills
-* 🎬 Entertainment
-* ❤️ Health
-* 📦 Other
-
----
+* Food
+* Travel
+* Shopping
+* Education
+* Bills
+* Entertainment
+* Health
+* Other
 
 ### 🎯 Budget Management
 
-Create and monitor monthly budgets.
-
-The system supports:
-
-* Overall monthly budgets
+* Overall monthly budget
 * Category-wise budgets
 * Spending tracking
-* Remaining budget calculation
+* Remaining budget
 * Budget utilization percentage
 * Visual progress bars
 * Budget warnings
 
-Budget status automatically changes according to spending:
+Budget status automatically indicates:
 
-| Usage     | Status            |
-| --------- | ----------------- |
-| Below 80% | Normal            |
-| 80%+      | ⚠️ Warning        |
-| 90%+      | 🚨 Strong Warning |
-| 100%+     | ❌ Budget Exceeded |
-
----
+* 🟢 Normal spending
+* 🟡 80%+ budget usage
+* 🟠 90%+ budget usage
+* 🔴 100%+ budget usage
 
 ### 📜 Transaction History
 
-View income and expenses in one centralized history page.
+View all income and expenses in one place.
 
-Powerful filtering features include:
+Includes:
 
 * Search
-* Month filter
-* Date filter
-* Income/Expense filter
-* Category filter
-* Payment method filter
-* Amount range
+* Month filtering
+* Date filtering
+* Income/Expense filtering
+* Category filtering
+* Payment method filtering
+* Amount filtering
 * Sorting
 * Pagination
 * Edit
 * Delete
 
-This makes it easy to find specific financial transactions quickly.
+### 📈 Monthly Analysis
 
----
-
-## 📈 Smart Monthly Analysis
-
-The analysis dashboard converts financial records into meaningful visual information.
-
-Users can select a:
-
-* Month
-* Year
+Analyze financial performance by selecting a specific month and year.
 
 The system calculates:
 
@@ -194,41 +130,18 @@ The system calculates:
 * Average Expense
 * Most Used Payment Method
 
----
+### 📊 Interactive Charts
 
-## 📊 Interactive Charts
+The application uses **Chart.js** to display real financial data through:
 
-The application uses **Chart.js** to visualize real database information.
+* Income vs Expense Chart
+* Category-wise Spending Chart
+* Daily Spending Chart
+* Payment Method Distribution Chart
 
-### 💰 Income vs Expense
+### 🔄 Month-to-Month Comparison
 
-Compare monthly income against monthly expenses.
-
-### 🍔 Category Spending
-
-Understand where the majority of money is being spent.
-
-### 📅 Daily Spending
-
-Track spending patterns throughout the selected month.
-
-### 💳 Payment Method Distribution
-
-See which payment methods are used most frequently.
-
-> All charts are generated using actual user data rather than static or random values.
-
----
-
-## 🔄 Month-to-Month Comparison
-
-Compare two different months to understand financial trends.
-
-For example:
-
-**August 2026 vs September 2026**
-
-The comparison can include:
+Compare two different months based on:
 
 * Income
 * Expenses
@@ -236,48 +149,31 @@ The comparison can include:
 * Budget
 * Budget utilization
 * Category spending
+* Percentage changes
 
-The application can generate understandable comparisons such as:
+This helps users understand how their financial activity changes over time.
 
-> Expenses increased compared with the previous month.
+### 🧠 Smart Spending Insights
 
-> Food spending increased compared with the selected comparison period.
+The application generates data-driven insights based on actual transactions.
 
-> Monthly income decreased compared with the selected month.
+Examples:
 
-Percentage changes are calculated dynamically from database data.
-
----
-
-## 🧠 Smart Spending Insights
-
-The application analyzes financial records and generates understandable insights based on actual calculations.
-
-Examples include:
-
-* Your highest spending category
-* Changes in expenses compared with another month
-* Current budget utilization
+* Highest spending category
+* Changes in monthly expenses
+* Budget utilization
 * Monthly savings
 * Spending trends
-* Most frequently used payment method
-* Average daily spending
+* Most-used payment method
+* Average daily expense
 
-The insights are **explainable and data-driven** rather than random messages.
+Insights are generated from explainable calculations rather than random or static information.
 
-> ⚠️ These insights are intended for personal tracking and educational purposes and should not be considered professional financial advice.
+> **Note:** These insights are for personal tracking and educational purposes and are not professional financial advice.
 
----
+### ❤️ Financial Health Score
 
-## ❤️ Financial Health Score
-
-The application provides an easy-to-understand **Financial Health Score from 0–100**.
-
-Example:
-
-**78 / 100 — Good**
-
-The score can consider explainable factors such as:
+A **0–100 Financial Health Score** is calculated using explainable factors such as:
 
 * Savings rate
 * Budget utilization
@@ -285,7 +181,7 @@ The score can consider explainable factors such as:
 * Expense consistency
 * Savings goal progress
 
-### Score Levels
+#### Score Levels
 
 |  Score | Status             |
 | -----: | ------------------ |
@@ -294,15 +190,13 @@ The score can consider explainable factors such as:
 |  40–59 | 🟡 Needs Attention |
 |   0–39 | 🔴 Critical        |
 
-A breakdown is provided to help users understand how the score was calculated.
+The application also provides a breakdown of the factors contributing to the score.
 
----
+### 🎯 Savings Goals
 
-## 🎯 Savings Goals
+Users can create and manage multiple savings goals.
 
-Create and monitor multiple financial goals.
-
-Example goals:
+Examples:
 
 * 💻 Laptop
 * 🏍️ Bike
@@ -310,129 +204,205 @@ Example goals:
 * 🎓 Education
 * 🛟 Emergency Fund
 
-Each goal can include:
+Features include:
 
-* Goal name
+* Create goal
+* Edit goal
+* Delete goal
+* Add money
 * Target amount
-* Current saved amount
-* Target date
-* Description
-* Completion percentage
+* Saved amount
 * Remaining amount
+* Target date
+* Completion percentage
 * Progress bar
+
+### 👤 Profile Management
 
 Users can:
 
-* Add goals
-* Edit goals
-* Delete goals
-* Add money toward goals
-* Track progress
-
-Example:
-
-**Laptop**
-
-Target: ₹80,000
-Saved: ₹52,000
-Progress: **65%**
-
----
-
-## 👤 Profile Management
-
-Users can manage their account information.
-
-Available features:
-
-* View profile
-* Update name
+* View profile information
+* Update their name
 * View email
 * Change password
-* Secure password validation
+* Securely validate account changes
 
----
+### 🌙 Dark Mode
 
-## 🌙 Dark Mode
+A complete Light/Dark theme system with:
 
-A modern Light/Dark theme system is included.
+* CSS variables
+* Responsive theme styling
+* Dark dashboard
+* Dark tables
+* Dark forms
+* Dark charts
+* Dark sidebar
+* Dark modals
 
-Dark mode adapts:
+Theme preference is stored using **localStorage**.
 
-* Dashboard
-* Sidebar
-* Cards
-* Tables
-* Forms
-* Buttons
-* Charts
-* Modals
-* Backgrounds
-* Text
+### 📱 Responsive Design
 
-The selected theme is saved using **localStorage**, so the preference remains available when the user returns.
+Designed for:
 
----
+* 320px mobile
+* 375px mobile
+* 414px mobile
+* 768px tablet
+* 1024px laptop
+* 1280px desktop
+* 1440px+ desktop
 
-## 📱 Fully Responsive
+Includes:
 
-The interface is designed to work across:
-
-* 📱 320px mobile
-* 📱 375px mobile
-* 📱 414px mobile
-* 📲 768px tablet
-* 💻 1024px laptop
-* 🖥️ 1280px desktop
-* 🖥️ 1440px+ desktop
-
-Responsive functionality includes:
-
-* Mobile navigation
-* Sidebar drawer
 * Responsive cards
 * Responsive tables
 * Responsive forms
 * Responsive charts
+* Mobile navigation
+* Sidebar drawer
 * Touch-friendly controls
 * No unnecessary horizontal scrolling
 
 ---
 
-## 🛡️ Security
+# 🛠️ Languages & Technologies
 
-Security is an important part of the application.
+## 💻 Programming Languages
 
-The project uses:
+### HTML5
 
-* `password_hash()`
-* `password_verify()`
-* PDO
-* Prepared statements
-* PHP sessions
-* CSRF tokens
-* Server-side validation
-* `htmlspecialchars()`
-* Authorization checks
-* User-specific database queries
-* SQL injection prevention
+Used to create the structure and semantic layout of the application.
 
-Every user's financial records are isolated.
+### CSS3
 
-A user cannot access another user's:
+Used for:
 
+* Modern UI design
+* Responsive layouts
+* CSS variables
+* Dark mode
+* Animations
+* Hover effects
+* Cards
+* Forms
+* Progress indicators
+
+### JavaScript
+
+**Vanilla JavaScript** is used for:
+
+* DOM manipulation
+* Search and filtering
+* Form interactions
+* Dark mode
+* Mobile navigation
+* Modal windows
+* Toast notifications
+* Confirmation dialogs
+* Chart initialization
+* Progress animations
+
+### PHP 8+
+
+**Core PHP** handles the backend functionality, including:
+
+* Authentication
+* Sessions
+* CRUD operations
+* Form processing
+* Database communication
+* Validation
+* Authorization
+* Financial calculations
+
+### SQL / MySQL
+
+MySQL is used for storing and managing:
+
+* Users
 * Income
 * Expenses
+* Categories
 * Budgets
 * Savings goals
-* History
-* Analysis
+
+### PDO
+
+PHP Data Objects (**PDO**) is used for secure database communication with prepared statements.
 
 ---
 
-## 🧮 Financial Calculations
+## 📚 Libraries & Tools
 
-The application performs calculations dynamically using MySQL records.
+| Technology                  | Usage                       |
+| --------------------------- | --------------------------- |
+| HTML5                       | Webpage structure           |
+| CSS3                        | UI/UX and responsive design |
+| Vanilla JavaScript          | Frontend interactions       |
+| PHP 8+                      | Backend development         |
+| MySQL                       | Database management         |
+| PDO                         | Secure database access      |
+| Chart.js                    | Data visualization          |
+| Font Awesome / Lucide Icons | Interface icons             |
+| LocalStorage                | Theme preference            |
+| PHP Sessions                | Authentication              |
+
+---
+
+# 🗄️ Database
+
+The application uses a MySQL database named:
+
+```text
+smart_budget_tracker
+```
+
+The database contains tables for:
+
+* Users
+* Categories
+* Income
+* Expenses
+* Budgets
+* Savings Goals
+
+The database uses:
+
+* Primary keys
+* Foreign keys
+* Indexes
+* User-specific relationships
+* Appropriate data types
+
+---
+
+# 🛡️ Security
+
+Security has been considered throughout the application.
+
+Implemented practices include:
+
+* `password_hash()`
+* `password_verify()`
+* PDO prepared statements
+* PHP sessions
+* CSRF tokens
+* Input validation
+* Output escaping using `htmlspecialchars()`
+* Authorization checks
+* User-specific queries
+* SQL injection prevention
+* Protection against unauthorized record access
+
+Each user's financial information is isolated from other users.
+
+---
+
+# 🧮 Financial Calculations
+
+The application calculates financial statistics dynamically.
 
 ### Balance
 
@@ -458,285 +428,56 @@ Remaining Budget = Budget − Expenses
 Budget Usage = (Expenses ÷ Budget) × 100
 ```
 
-No financial statistics are hard-coded.
+All calculations are based on actual user records stored in MySQL.
 
 ---
 
-## 🇮🇳 Indian Currency Support
+# 🇮🇳 Indian Currency
 
-The application uses the Indian Rupee symbol:
+The application uses the Indian Rupee:
 
 **₹**
 
 Examples:
 
-* ₹1,500
-* ₹25,000
-* ₹1,25,000
+```text
+₹1,500
+₹25,000
+₹1,25,000
+```
 
-Indian-style number formatting is used wherever appropriate.
+Indian numbering format is supported where appropriate.
 
 ---
 
-## 🛠️ Technologies Used
+# 🎨 UI/UX
 
-| Technology                      | Purpose                       |
-| ------------------------------- | ----------------------------- |
-| **HTML5**                       | Application structure         |
-| **CSS3**                        | Modern responsive UI          |
-| **Vanilla JavaScript**          | Interactive functionality     |
-| **PHP 8+**                      | Backend logic                 |
-| **MySQL**                       | Database                      |
-| **PDO**                         | Secure database communication |
-| **Chart.js**                    | Financial charts              |
-| **Font Awesome / Lucide Icons** | UI icons                      |
-| **XAMPP**                       | Local development             |
-| **InfinityFree**                | PHP/MySQL hosting             |
+The application follows a modern **FinTech/SaaS-inspired design**.
 
----
+The interface includes:
 
-## 💻 XAMPP Setup
+* Clean dashboard cards
+* Rounded components
+* Soft shadows
+* Modern typography
+* Consistent spacing
+* Professional buttons
+* Interactive charts
+* Progress indicators
+* Toast notifications
+* Smooth hover effects
+* Light/Dark themes
+* Responsive layouts
 
-### 1. Install XAMPP
-
-Install XAMPP with:
-
-* Apache
-* MySQL
-* PHP
-
-### 2. Copy the Project
-
-Place the project inside:
-
-```text
-xampp/htdocs/
-```
-
-For example:
-
-```text
-xampp/htdocs/Smart-Budget-Tracker/
-```
-
-### 3. Start XAMPP
-
-Open XAMPP Control Panel and start:
-
-```text
-Apache
-MySQL
-```
-
-### 4. Create the Database
-
-Open:
-
-```text
-http://localhost/phpmyadmin
-```
-
-Create a database named:
-
-```text
-smart_budget_tracker
-```
-
-### 5. Import Database
-
-Open the **Import** section in phpMyAdmin and select:
-
-```text
-database.sql
-```
-
-Execute the SQL script.
-
-### 6. Configure Database Connection
-
-Update the database configuration in:
-
-```text
-db.php
-```
-
-For XAMPP, typical settings are:
-
-```text
-Host: localhost
-Database: smart_budget_tracker
-Username: root
-Password: empty
-```
-
-### 7. Run the Application
-
-Open:
-
-```text
-http://localhost/Smart-Budget-Tracker/
-```
-
-Register a new account and start using the application.
+The goal is to provide a polished experience rather than a basic college-project interface.
 
 ---
 
-## 🌐 InfinityFree Deployment
+# 🎓 Project Purpose
 
-The project is designed to work with standard PHP/MySQL shared hosting.
+Smart Budget Tracker was created to demonstrate practical full-stack development skills through a real-world financial management application.
 
-### Step 1 — Create Hosting
-
-Create an InfinityFree hosting account and activate your website.
-
-### Step 2 — Upload Files
-
-Open the hosting file manager or FTP and upload the project files into the appropriate web root, commonly:
-
-```text
-htdocs/
-```
-
-### Step 3 — Create MySQL Database
-
-From the InfinityFree control panel, create a MySQL database.
-
-InfinityFree will provide database details such as:
-
-* MySQL hostname
-* Database name
-* Username
-* Password
-
-### Step 4 — Import Database
-
-Open the provided database management interface and import:
-
-```text
-database.sql
-```
-
-### Step 5 — Update Database Configuration
-
-Update `db.php` with the MySQL credentials provided by your hosting account.
-
-Do **not** use:
-
-```text
-localhost
-```
-
-for the production database unless your hosting provider specifically instructs you to.
-
-### Step 6 — Open Website
-
-Visit your assigned domain and test:
-
-* Registration
-* Login
-* Dashboard
-* Income
-* Expenses
-* Budget
-* History
-* Analysis
-* Savings
-* Profile
-* Logout
-
----
-
-## ⚙️ Changing MySQL Credentials
-
-Database configuration should be kept separate from application logic.
-
-For local development:
-
-```text
-Host: localhost
-Database: smart_budget_tracker
-Username: root
-Password: 
-```
-
-For InfinityFree:
-
-```text
-Host: YOUR_INFINITYFREE_MYSQL_HOST
-Database: YOUR_DATABASE_NAME
-Username: YOUR_DATABASE_USERNAME
-Password: YOUR_DATABASE_PASSWORD
-```
-
-Never publish real production database credentials to GitHub.
-
-If credentials are accidentally exposed, change them immediately.
-
----
-
-## 🔧 Troubleshooting
-
-### Database connection error
-
-Check:
-
-* MySQL is running
-* Database name is correct
-* Username is correct
-* Password is correct
-* Hostname is correct
-
-### Login not working
-
-Check:
-
-* `database.sql` was imported successfully
-* The `users` table exists
-* PHP sessions are enabled
-* Passwords are being stored using `password_hash()`
-
-### Charts not appearing
-
-Check:
-
-* Internet connection
-* Chart.js is loading correctly
-* Browser developer console for JavaScript errors
-* PHP is returning valid data
-
-### InfinityFree database not connecting
-
-Make sure you are using the **MySQL hostname supplied by InfinityFree**, not automatically assuming it is `localhost`.
-
-### CSS not loading
-
-Check that:
-
-* `style.css` exists
-* The stylesheet path is correct
-* File names match exactly
-* Browser cache is cleared
-
----
-
-## 📌 Project Goals
-
-Smart Budget Tracker was designed with the following goals:
-
-* Make personal expense tracking simple
-* Provide useful financial visualization
-* Help users understand spending patterns
-* Encourage budget awareness
-* Track savings goals
-* Provide meaningful data-driven insights
-* Demonstrate full-stack PHP/MySQL development
-* Maintain a clean and beginner-friendly codebase
-
----
-
-## 🎓 Portfolio Value
-
-This project demonstrates practical knowledge of:
+The project demonstrates knowledge of:
 
 * Full-stack web development
 * PHP backend development
@@ -744,37 +485,65 @@ This project demonstrates practical knowledge of:
 * CRUD operations
 * Authentication
 * Session management
-* PDO prepared statements
-* SQL relationships
+* Secure database queries
 * Data visualization
-* JavaScript DOM manipulation
+* JavaScript interactions
 * Responsive web design
-* Security fundamentals
-* Hosting and deployment
-* Real-world application architecture
-
-It is suitable for showcasing in a **college portfolio, GitHub profile, internship applications, and resume projects section**.
+* Financial calculations
+* User authorization
+* UI/UX development
 
 ---
 
-## 🔗 Live Demo
+# 🚀 Why Smart Budget Tracker?
 
-### 🚀 Try Smart Budget Tracker
+Managing money can become difficult when income, expenses, budgets, and savings are tracked separately.
+
+**Smart Budget Tracker brings everything together in one place.**
+
+> **Track your money. Understand your spending. Plan your budget. Reach your goals.**
+
+---
+
+# 🌐 Live Demo
+
+### 🚀 Smart Budget Tracker
 
 **https://cash-intelligence-navigator.vercel.app**
 
 ---
 
-## 📄 License
+# ⭐ Project Highlights
 
-This project is created for **educational, portfolio, and learning purposes**.
-
-You are free to study, modify, and improve the project according to your requirements.
+* 🔐 Secure Authentication
+* 💰 Real-time Financial Calculations
+* 📊 Interactive Analytics
+* 🧠 Smart Spending Insights
+* ❤️ Financial Health Score
+* 🎯 Savings Goals
+* 📈 Monthly Comparison
+* 🌙 Dark Mode
+* 📱 Fully Responsive UI
+* 🛡️ Secure PDO Database Queries
+* 🇮🇳 Indian Currency Support
+* 🎨 Modern FinTech UI
 
 ---
 
-## ⭐ Support
+## 📄 License
 
-If you find this project useful, consider giving the repository a ⭐ on GitHub.
+This project is developed for **educational, learning, and portfolio purposes**.
 
-**Build smarter. Track better. Save with purpose. 💰📊**
+Feel free to study the code, customize the design, add new functionality, and improve the application.
+
+---
+
+<div align="center">
+
+### 💰 Smart Budget Tracker
+
+**Track Smarter • Spend Wisely • Save Better**
+
+⭐ If you find this project useful, consider giving it a star!
+
+</div>
