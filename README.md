@@ -2,7 +2,7 @@
 
 > **Take Control of Your Money. Track Smarter. Save Better.**
 
-**Smart Budget Tracker** is a modern, full-stack personal finance management web application that helps users track income, manage expenses, set budgets, analyze spending patterns, and achieve savings goals — all from one smart dashboard.
+**Cash Intelligence Navigator ** is a modern, full-stack personal finance management web application that helps users track income, manage expenses, set budgets, analyze spending patterns, and achieve savings goals — all from one smart dashboard.
 
 🚀 **Live Demo:** https://cash-intelligence-navigator.vercel.app
 
