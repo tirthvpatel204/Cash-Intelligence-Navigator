@@ -1,0 +1,6 @@
+{
+  "name": "Smart Budget Tracker",
+  "description": "A responsive FinTech budget tracker to monitor income, expenses, monthly category budgets, and savings goals with smart spending insights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
